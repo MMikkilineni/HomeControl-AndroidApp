@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <ImageView
+        android:id="@+id/imagelight"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/imagehome"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/imagehome"
+        android:layout_toRightOf="@+id/imagehome"
+        app:srcCompat="@drawable/light" />
+
+    <ImageView
+        android:id="@+id/imagehome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="99dp"
+        app:srcCompat="@drawable/home1" />
+
+    <ImageView
+        android:id="@+id/imagepower"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignEnd="@+id/imagehome"
+        android:layout_alignRight="@+id/imagehome"
+        android:layout_below="@+id/imagehome"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/power" />
+
+    <ImageView
+        android:id="@+id/imagephone"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/imagelight"
+        android:layout_alignStart="@+id/imagelight"
+        android:layout_alignTop="@+id/imagepower"
+        app:srcCompat="@drawable/phone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagepower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/black"
+        android:text="Home Control"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30dp" />
+
+</RelativeLayout>
